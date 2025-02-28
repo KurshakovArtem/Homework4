@@ -49,7 +49,7 @@ class MainKtTest {
         val resultErrorDailyLimit = comission(amount = amount)
         val resultErrorMonthlyLimit = comission(amount = amount - 1, previousAmount = previousAmount)
 
-        assertEquals(-2, resultErrorDailyLimit)
+        assertEquals(-1, resultErrorDailyLimit)
         assertEquals(-2, resultErrorMonthlyLimit)
     }
 
